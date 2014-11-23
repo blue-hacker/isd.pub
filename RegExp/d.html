@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for an "l", followed by zero or more "o" characters.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    //var str = "Hellooo World! Hello W3Schools!";
+    //var patt1 = /lo*/g;
+
+    //var str = "fd fod food ooofd"; //match
+    var str= "fooo "; //did not match
+    var patt1 = /fo*d/g;
+    var result = str.match(patt1);
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+
+</html>

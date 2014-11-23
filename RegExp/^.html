@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for "The" at the beginning of a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = "the Night"; //matches and result is 'The'.
+    //var str="in The Night";//didn't matche and result is empty.
+    var patt1 = /^The/i;
+    var result = str.match(patt1);
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+
+</html>

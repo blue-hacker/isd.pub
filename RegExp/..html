@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for "h.t" in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    //var str = "That's hot! hpt";
+    //var str = "food fo9d fo*d fo*dd fo/d fo d";
+    var str = "fo\d";
+
+
+    var patt1 = /fo.d/g;
+    var result = str.match(patt1);
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/jsref/tryit.asp?filename=tryjsref_regexp_dot by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 09:04:25 GMT -->
+</html>

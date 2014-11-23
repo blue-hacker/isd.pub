@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for digits in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    //var str = "Give 100%!";
+    //var patt1 = /\d/g;
+
+    var str="fo1d fo4d foad";
+    //var patt1 = /fo\dd/g;
+    var patt1 = /fo[0-9]/g; //same with above line
+    var result = str.match(patt1);
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/jsref/tryit.asp?filename=tryjsref_regexp_digit by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 09:04:25 GMT -->
+</html>

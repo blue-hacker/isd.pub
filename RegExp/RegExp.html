@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<div> <b> Search for 'is' in this String: </b> <span style="color:red"> Is this all there is? </span> </div>
+<button onclick="myFunction()">Find!</button>
+<p id="demo"> </p>
+<script>
+function myFunction() {
+    var str = " this Is all there is?";
+    var patt1 = /is/g; //find is in the above string and globaly search // find all is except 'Is,iS,IS' in the doc
+    //var patt2 = /is/gi; //find all is the above string // find all is include 'is,Is,iS,IS' in the doc
+
+    document.getElementById("demo").innerHTML= (str.match(patt1));
+  }
+</script>
+
+</body>
+
+</html>

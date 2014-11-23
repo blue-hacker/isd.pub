@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for whitespace characters in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    //var str = "Is this all there is?";
+    //var patt1 = /\s/g;
+
+    var str = "fo d food";
+    var patt1 = /fo\sd/g;
+
+    var result = str.match(patt1);
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/jsref/tryit.asp?filename=tryjsref_regexp_space by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 09:04:25 GMT -->
+</html>

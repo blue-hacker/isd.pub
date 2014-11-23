@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to global search for a substring that contains a sequence of at least three digits.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    //var str = "100, 1000 or 10000?";
+    //var patt1 = /\d{3,}/g;
+
+    var str = "fod foooood food"
+    var patt1 = /fo{2,}d/g;
+
+    var result = str.match(patt1);
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/jsref/tryit.asp?filename=tryjsref_regexp_nxx by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 09:04:25 GMT -->
+</html>
