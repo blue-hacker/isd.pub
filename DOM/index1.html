@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>JS DOM</title>
+</head>
+<body>
+<span>
+  <p> Kotesangi </p>
+  <ol>
+  <li>car</li>
+  <li>bike</li>
+  <li>bicycle</li>
+  </ol>
+ <!-- <ol>
+  <li>Water</li>
+  <li>Juice</li>
+  <li>tea</li>
+  </ol> -->
+</span>
+</p>
+<script>
+//var x = document.getElementsByTagName("ol")[0];
+var x = document.getElementsByTagName("span")[0];
+var y = x.getElementsByTagName("p")[0];
+//for (var z=0 , length = y.length; z< length; z++){
+//alert(y[z].firstChild.data);
+//}
+
+alert(y.firstChild.data);
+</script>
+</body>
+</html>

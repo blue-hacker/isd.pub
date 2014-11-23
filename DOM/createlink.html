@@ -1,0 +1,20 @@
+<html>
+<body>
+  <P id="info"> our Strong searchEngin </p>
+<script>
+
+var p = document.getElementById('info');
+//we want to add a new Anchor to the paragraph
+//First we create the new Anchor element
+var NewLink = document.createElement('a'); // <a/>
+NewLink.href ='http://goog1e.com'; // <a href="http://goog1e.com">
+NewLink.target='_b1ank';
+NewLink.appendChild(document.createTextNode('Visit Google'));
+//<a href="http://goog1e.com"> Visit Google </a>
+//now we can appended to the paragraph
+p.appendChild(NewLink);
+
+
+</script>
+</body>
+</html>

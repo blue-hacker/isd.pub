@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" /><title>JavaScript document Object : bgColor Property. Example-1</title>
+</head>
+<body>
+<h1 style="color: red">JavaScript document Object : bgColor Property</h1>
+<h3>Click on any button and check the background color of the document.</h3>
+<hr />
+<form action="#">
+<input type="button"
+value="Red"
+name="button1"
+onclick="changeBackGroundColor('red')" />
+<br />
+<input type="button"
+value="Blue"
+name="button2"
+onclick="changeBackGroundColor('blue')" />
+<br />
+<input type="button"
+value="cyan"
+name="button3"
+onclick="changeBackGroundColor('#23ac9e')" />
+</form>
+<script type="text/javascript" language="JavaScript">
+//This is done to make the following JavaScript code compatible to XHTML. <![CDATA[
+// Following function changes the background color and fills in the text box.
+function changeBackGroundColor(color)
+{
+document.bgColor=color;
+}
+//]]>
+</script>
+</body>
+</html>
+- See more at: http://www.w3resource.com/javascript/client-object-property-method/document-bgColor.php#sthash.4wmRQxHx.dpuf

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+Read about the <a href="#" target="_blank">Attr object</a>.
+<p id="demo">Click the button to display the value of the target attribute of the link above</p>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction()
+{
+var a=document.getElementsByTagName("a")[0];
+document.getElementById("demo").innerHTML=a.getAttribute("target");
+}
+</script>
+</body>
+</html>

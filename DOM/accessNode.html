@@ -1,0 +1,34 @@
+<html>
+<body>
+  <h1> Accessing the Dom Node </h1>
+
+<div>
+  <ul>
+    <li>car</li>
+    <li>bike</li>
+    <li>pencile</li>
+  </ul>
+
+  <ul>
+    <li>Milk</li>
+    <li>Chese</li>
+    <li>Cream</li>
+  </ul>
+</div>
+
+</body>
+<script>
+//change bgcolor
+document.bgColor = "#bdcbc6";
+
+//target: first div
+var div = document.getElementsByTagName('div')[0];
+//target:second ul
+var ul = div.getElementsByTagName('ul')[1];
+//target:third li data
+var x = ul.getElementsByTagName('li')[2];
+
+alert(x.firstChild.data);
+
+</script>
+</html>

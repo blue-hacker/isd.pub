@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The global function typeof() returns the type of variables:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = 
+    typeof("john") + "<br>" + 
+    typeof(3.14) + "<br>" +
+    typeof(false) + "<br>" +
+    typeof({name:'john', age:34});
+}
+
+document.write("'true' DataType: "+ typeof(true));
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/js/tryit.asp?filename=tryjs_typeof by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 07:39:49 GMT -->
+</html>
+
+

@@ -1,0 +1,15 @@
+<html>
+<body>
+  <p id="intro"> Hello Dear User! </p>
+  <button onclick="changeStyle(myIntro, 'backgroundColor', 'red')">Click </button>
+  <script>
+
+function changeStyle(elem, property, val) {
+elem.style[property] = val;
+// Notice the square brackets used to access the property
+}
+var myIntro= document.getElementById('intro');
+
+  </script>
+</body>
+</html>

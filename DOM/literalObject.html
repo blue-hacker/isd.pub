@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+// creating literal(curly brace) object
+	var person = {
+		firstName : "Ali",
+		lastName  : "Rezaie",
+		age       : 23,
+		eyeColor  : "light-blue"
+	};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old. </br>";
+
+// using the object constructor
+var profile = new Object();
+	profile.firstName='javed';
+	profile.lastName='Amadi';
+	profile.age=35;
+	profile.eyeColor='darkblue';
+document.getElementById("demo2").innerHTML =
+profile.firstName + " is " + profile.age + " years old. </br>";
+
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/js/tryit.asp?filename=tryjs_create_object1 by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 07:39:47 GMT -->
+</html>

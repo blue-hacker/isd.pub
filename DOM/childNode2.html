@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body><p id="demo">Click the button get info about the body element's child nodes</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction()
+{
+var txt="";
+var c=document.body.childNodes;
+for (i=0; i<c.length; i++)
+  {
+  txt=txt + c[i].nodeName + "<br>";
+  };
+var x=document.getElementById("demo");
+x.innerHTML=txt;
+}
+</script>
+
+<p><strong>Note:</strong> Whitespace inside elements is considered as text, and text
+is considered as nodes.</p>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_childnodes by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 09:04:32 GMT -->
+</html>

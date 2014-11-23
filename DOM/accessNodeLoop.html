@@ -1,0 +1,35 @@
+<html>
+<head>
+
+</head>
+
+<body>
+  <span id="sp">
+    <ul>
+        <li>fist Iteam</li>
+        <li>2nd Iteam</li>
+        <li>3rd Iteam</li>
+    </ul>
+  </span>
+  <button onclick="myfun();">show</button>
+  <script>
+  //var span= document.getElementsByTagName('span')[0];
+  //var ol=span.getElementsByTagName('ol')[0];
+  //var x=ol.getElementsByTagName('li')[2];
+  //alert(x.firstChild.data);
+
+  function myfun(){
+  var span= document.getElementById("sp");
+  var ul=span.getElementsByTagName("ul")[0];
+  var li=ul.getElementsByTagName("li")[0];
+  var num = li.length;
+
+  for(var i=0;i<num;i++){
+    alert(li[i].firstChild.data); //show the data of all <li>
+  }
+  }
+
+  </script>
+</body>
+
+</html>

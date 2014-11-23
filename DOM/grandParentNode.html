@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Click the button to see the parentNode of second p wiht Inde:1</p>
+<h3><div><p>Example list:</p><ul><li>Coffee</li><li>Tea</li></ul></div></h3>
+
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction()
+{
+var x=document.getElementById("demo");
+var y=document.getElementsByTagName("li")[0];
+x.innerHTML=y.parentNode.parentNode.parentNode.nodeName; //return the parent node name of 2nd p which is div
+          //y>ul>div>h3
+alert(x.innerHTML);
+}
+</script>
+</body>
+</html>

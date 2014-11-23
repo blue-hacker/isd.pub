@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Create a variable, assign a value to it, and display it.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+// carName variable is a local variable and it has a local scope
+function myFunction() {
+  //implement insid the function Explicit+implicit
+
+    var carName = "Volvo"; //Explicit (no var in declaration)
+   carName = "Volvo"; //implicit /global
+    document.getElementById("demo").innerHTML = carName;
+}
+book="hello"; //Implicit
+document.write(book);
+
+
+
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/js/tryit.asp?filename=tryjs_variables1 by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 07:39:41 GMT -->
+</html>

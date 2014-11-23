@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="myList"><li id="item1">Coffee</li><li id="item2">Tea</li></ul>
+
+<p id="demo">Click the button get the id of the next sibling of the first item</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction()
+{
+var x=document.getElementById("demo");
+//x.innerHTML=document.getElementById("item1").nextSibling.id;
+x.innerHTML=document.getElementById("item2").previousSibling.id;
+}
+</script>
+
+<p><strong>Note:</strong> Whitespace inside elements is considered as text, and text
+is considered as nodes.</p>
+
+<p>Try adding whitespace between the two &lt;li&gt; elements, and the result will be "undefined".</p>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_nextsibling by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 06 Jun 2014 09:04:33 GMT -->
+</html>

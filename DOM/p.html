@@ -1,0 +1,31 @@
+<html>
+<body>
+<div id="div1" align="center">
+  <form id="form1" align="left"> display the value of the id attribute</p></form>
+
+  <p id="demo2">Click the 1 button</p>
+</div>
+<button onclick="myFunction()">Try it</button>
+</body>
+
+<script>
+//var div1 = document.getElementById("div1");
+//var align = div1.getAttribute("align");
+//alert(align); // shows the value of align for the element with id="div1"
+
+
+
+function myFunction()
+{
+//var div=document.getElementById("div1");
+//var form=div.getElementsByTagName("form")[0];
+//var attrib=form.getAttribute("align");
+var div=document.getElementById("div1"); //target: div
+var p=div.getElementsByTagName("p")[1]; //target:first p with indexNO:1
+var attrib=p.getAttribute("id"); //target: show the id attribute value
+//var attrib=p.firstChild.data; //target: show the text of the paragraph
+alert(attrib);
+}
+
+</script>
+</html>

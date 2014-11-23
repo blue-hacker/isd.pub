@@ -1,0 +1,13 @@
+<html>
+<body>
+<div id="div-01"><p>p is ' firstChild'</p><span>span is ' lastChild'</span></div>
+
+<script>
+  //clear all white space between the tags otherwise the result will be '#text'
+  var div01 = document.getElementById('div-01');
+  alert(div01.firstChild.nodeName); //return the firstChild of div which is p
+  alert(div01.lastChild.nodeName); //return the lastChild of div which is span
+</script>
+
+</body>
+</html>

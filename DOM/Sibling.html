@@ -1,0 +1,21 @@
+<html>
+<body>
+<div>
+  <p> Hello Guys! </p><ul>
+    <li> Coffee </li>
+    <li> Tea </li>
+    <li> Milk </li>
+  </ul>
+</div>
+
+<script>
+var div=document.getElementsByTagName('div')[0];
+var ul=div.getElementsByTagName('ul')[0];
+//var li=ul.getElementsByTagName('li')[0]; //first Child of UL
+//var li=ul.getElementsByTagName('li')[1]; //second Child of UL
+var li=ul.getElementsByTagName('li')[2]; //Third Child of UL
+var x=li.childNodes[0].data;
+
+alert(x);
+</script>
+</html>

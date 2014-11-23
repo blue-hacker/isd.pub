@@ -1,0 +1,18 @@
+<html>
+<body>
+  <p id="intro"> Hello </p>
+<script>
+
+//txt=document.getElementById("intro").innerHTML;
+//document.write("<p>The text from the intro p is: " + txt +"</p>");
+
+var X= document.getElementById('intro');
+// Replacing current content with new content:
+var b=X.innerHTML= 'New content for th';
+document.write(b);
+// Adding to current content:
+var a = X.innerHTML+= '... some more content...';
+document.write(a);
+</script>
+</body>
+</html>
