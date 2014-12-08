@@ -1,0 +1,67 @@
+<html>
+<head>
+  <script src="js/jquery.js"> </script>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <style>
+  #register{display:none;}
+  </style>
+<script>
+  $(document).ready(function(){
+
+    $('.reg').click(function(){
+      $('#login').hide();
+      $('#register').show('fast');
+    });
+
+    $('.cls').click(function(){
+      $('#login').fadeIn(4000);
+      $('#register').fadeOut(4000);
+    });
+
+  });
+</script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+  <div id="login">
+    <h3> Login Form! </h3>
+    <form id="form">
+      <a href="#" class="reg">Dont have a account!Create An Account! </a>
+      <table>
+        <tr> <td>
+          userName:<input type="text">
+        </td> </tr>
+
+      <tr> <td>
+        password:<input type="password">
+      </td> </tr>
+
+      <tr> <td style="text-align:right">
+      <button type="submit" class="btn btn-success"><i class="fa fa-lock"></i> Login! </button>
+      </td> </tr>
+    </table>
+    </form>
+  </div>
+
+  <div id="register">
+    <form id="form2">
+      <h3> Registeration Form! </h3>
+      <a href="#" class="cls"> Cancel Registeration! </a> <br />
+      FirstName:<input type="text"> <br />
+      LastName:<input type="text"><br />
+      Address:<input type="text"><br />
+      Email:<input type="text"><br />
+      userName:<input type="text"><br />
+      password:<input type="password"><br />
+      <button type="button" class="btn btn-danger"> Register! </button>
+
+    </form>
+  </div>
+
+</div>
+</body>
+</html>
