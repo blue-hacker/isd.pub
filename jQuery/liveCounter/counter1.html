@@ -1,0 +1,91 @@
+<html>
+<head>
+<script src="../js/jquery.js"> </script>
+<link rel="stylesheet" href="../css/bootstrap.css"/>
+
+<style>
+body
+{
+font-family:Arial, Helvetica, sans-serif;
+}
+#contentbox
+{
+width:600px; height:100px;
+border:solid 2px #006699;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:black;
+background-color:#21ac95;
+}
+#bar
+{
+background-color:red;
+width:0px;
+height:16px;
+
+}
+#barbox
+{
+float:right;
+height:16px;
+background-color:#FFFFFF;
+width:100px;
+border:solid 2px #000;
+margin-right:3px;
+-webkit-border-radius:5px;-moz-border-radius:5px;
+border:1px solid #5a4048;
+}
+#count
+{
+float:right; margin-right:8px;
+font-family:'Georgia', Times New Roman, Times, serif;
+font-size:16px;
+font-weight:bold;
+color:#666666;
+}
+
+</style>
+<script type="text/javascript">
+$(document).ready(function()
+{
+  $("#contentbox").keyup(function()
+  {
+    var box=$(this).val();
+    var main = box.length *100; //Means 150 is equal to 100
+    var value= (main / 150);
+    var count= 150 - box.length;
+
+if(box.length <= 150)
+{
+  $('#count').html(count); //html is equal to innerHTML
+  $('#bar').animate(
+    {
+      "width": value+'%',
+    }, 1
+  );
+}
+else
+  {
+    alert(' Full you can not type more... ');
+  }
+return false;
+});
+
+});
+</script>
+</head>
+<body>
+  <div class="text-success">
+
+<div style="margin:50px; padding:10px; width:460px">
+<div style="height:25px;">
+
+<div style="float:left"><b>Live update Box with Live Count Meter</b></div>
+
+<div id="barbox"><div id="bar"></div></div><div id="count">150</div>
+</div>
+<textarea id="contentbox"></textarea>
+<div>
+
+</div>
+</body>
